@@ -1,0 +1,170 @@
+.head {
+
+    border-bottom: 1px solid #ececec;
+}
+.main-nav {
+    display: flex;
+    align-items: center;
+}
+.main-nav .logo {
+    margin-right: 93px;
+}
+
+.head-nav {
+    display: inline-flex;
+    align-items: center;
+}
+.site-nav {
+    display: flex;
+}
+
+.site-nav .item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.site-nav .link.current::after {
+    content: '';
+    position: absolute;
+
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+
+
+}
+
+.site-nav .portfolio.current::after {
+    content: '';
+    position: absolute;
+
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+
+
+}
+
+.site-nav .item {
+    position: relative;
+}
+
+.site-nav a {
+    color: var(--title-text-color);
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    transition: color 250ms var(--animation-cubic);
+}
+
+.site-nav a:hover,
+.site-nav a:focus {
+    color: var(--accent-color);
+}
+
+.site-nav .link,
+.portfolio,
+.contact {
+    position: relative;
+
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+
+.site-nav .link.current {
+    color: var(--accent-color);
+}
+
+/* portfolio */
+.site-nav .portfolio {
+    color: var(--title-text-color);
+
+}
+
+.site-nav .portfolio:hover,
+.site-nav .portfolio:focus {
+    color: var(--accent-color);
+}
+
+.site-nav .portfolio.current {
+    color: var(--accent-color);
+}
+
+/* contacts */
+
+.contacts {
+    display: flex;
+    margin-left: auto;
+    padding: 0;
+
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+
+}
+
+.contacts .item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.contacts .mail {
+    color: var(--primary-text-color);
+    display: flex;
+    align-items: center;
+
+    transition: color 250ms var(--animation-cubic);
+}
+
+
+.contacts .mail-icon {
+    margin-right: 10px;
+
+    fill: var(--primary-text-color);
+
+    transition: fill 250ms var(--animation-cubic);
+}
+
+.contacts .mail:hover .mail-icon,
+.contacts .mail:focus .mail-icon {
+    fill: var(--accent-color);
+}
+
+.contacts .mail:hover,
+.contacts .mail:focus {
+    color: var(--accent-color);
+}
+
+.contacts .tel {
+    color: var(--primary-text-color);
+    display: flex;
+    align-items: center;
+
+    transition: color 250ms var(--animation-cubic);
+}
+
+.contacts .tel-icon {
+    margin-right: 10px;
+
+    fill: var(--primary-text-color);
+
+    transition: fill 250ms var(--animation-cubic);
+}
+
+.contacts .tel:hover .tel-icon,
+.contacts .tel:focus .tel-icon {
+    fill: var(--accent-color);
+}
+
+.contacts .tel:hover,
+.contacts .tel:focus {
+    color: var(--accent-color);
+}
