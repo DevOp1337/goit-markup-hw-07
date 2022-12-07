@@ -4,7 +4,7 @@
 }
 
 
-.clients-list {
+.clients__list {
     margin: 0;
     padding: 0;
 
@@ -14,7 +14,7 @@
 
 }
 
-.clients-title {
+.clients__title {
     margin-bottom: 50px;
 
 
@@ -24,7 +24,7 @@
 }
 
 
-.clients-list .icon-list {
+.clients__item{
     margin-right: 30px;
     width: 170px;
     height: 92px;
@@ -33,12 +33,12 @@
 
 }
 
-.clients-list .list:last-child {
+.clients__item:last-child {
     margin-right: 0;
 }
 
-.clients-list .clients-link:hover,
-.clients-list .clients-link:focus {
+.clients__link:hover,
+.clients__link:focus {
     border-color: var(--accent-color);
     color: var(--accent-color);
 
@@ -46,11 +46,11 @@
 
 
 
-.clients-icon {
+.clients__icon {
     fill: currentColor;
 }
 
-.clients-link {
+.clients__link {
     width: 100%;
     height: 100%;
     display: flex;

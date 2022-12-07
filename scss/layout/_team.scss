@@ -3,30 +3,7 @@
     padding: 94px 0;
 }
 
-.team-list {
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
-
-.team-list .item {
-    background-color: #ffffff;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-}
-
-.team-list .item-text {
-    padding-top: 30px;
-    padding-bottom: 30px;
-
-
-}
-
-.team-list .item:not(:last-child) {
-    margin-right: 30px;
-}
-
-.team-title {
+.team__title {
     margin-top: 0;
     margin-bottom: 50px;
 
@@ -37,9 +14,34 @@
     text-align: center;
 }
 
+.team__list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.worker {
+    background-color: #ffffff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.worker__meta {
+    padding-top: 30px;
+    padding-bottom: 30px;
 
 
-.team-name {
+}
+
+.worker:not(:last-child) {
+    margin-right: 30px;
+}
+
+
+
+
+
+.worker__name {
     margin-top: 0;
     margin-bottom: 10px;
 
@@ -49,7 +51,7 @@
     text-align: center;
 }
 
-.team-position {
+.worker__position {
     margin: 0;
 
     color: var(--primary-text-color);
@@ -59,21 +61,21 @@
     text-align: center;
 }
 
-.team .team-icons {
+.socials {
     display: flex;
     justify-content: center;
     margin-top: 16px;
 }
 
 
-.team-list .social-item {
+.socials__item {
     width: 44px;
     height: 44px;
 
     margin-right: 10px;
 }
 
-.team-list .social-link {
+.socials__link {
 
     height: 100%;
 
@@ -92,8 +94,8 @@
 
 }
 
-.team-list .social-link:hover,
-.team-list .social-link:focus {
+.socials__link:hover,
+.socials__link:focus {
     background-color: var(--accent-color);
     color: var(--white);
 }
@@ -101,16 +103,16 @@
 
 
 
-.team-list .social-link:hover .team-icon,
-.team-list .social-link:focus .team-icon {
+.socials__link:hover .socials__icon,
+.socials__link:focus .socials__icon {
     fill: var(--white);
 }
 
-.team-list .team-icon {
+.socials__icon{
 
     fill: currentColor;
 }
 
-.team-list .social-item:last-child {
+.socials__item:last-child {
     margin-right: 0;
 }
