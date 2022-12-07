@@ -2,7 +2,7 @@
     padding-bottom: 94px;
 }
 
-.work-title {
+.work__title {
     margin-top: 0;
     margin-bottom: 50px;
 
@@ -12,28 +12,26 @@
     text-align: center;
 }
 
-.work-list {
+.work__list {
     margin: 0;
     padding: 0;
     display: flex;
 }
 
-.work-list .item img {
-    margin: 0;
-}
 
-.work-list .item:not(:last-child) {
+
+.work__item:not(:last-child) {
     margin-right: 30px;
 }
 
 
-.work-list .item {
+.work__item {
     position: relative;
     height: 294px;
 }
 
 
-.work-text {
+.work__text {
     position: absolute;
     bottom: 0;
 
